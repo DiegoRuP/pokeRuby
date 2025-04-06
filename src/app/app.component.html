@@ -1,1 +1,22 @@
-<h1 class="font-gba text-4xl"> Hola mundo</h1>
+<div class="flex flex-col h-screen bg-cover bg-center" style="background-image: url('assets/img/main-bg.png')">
+
+    <div class="flex flex-1 overflow-hidden">
+
+        <div class="w-3/4 p-4 z-20 overflow-y-auto">
+
+            <div *ngIf="showComponent" class="bg-white border-[20px] border-[#7c67ab] outline outline-4 outline-[#AAAAA] p-8 rounded-lg h-full font-gba text-shadow">
+              <router-outlet></router-outlet>
+            </div>
+
+        </div>
+        
+        <div class="w-1/4 p-4 z-10 h-full">
+            <app-navbar></app-navbar>
+        </div>
+  
+    </div>
+  
+    <footer class="bg-[#7c67ab] text-white text-center p-2 z-10">
+      © 2025 DiegoRuP 
+    </footer>
+  </div>

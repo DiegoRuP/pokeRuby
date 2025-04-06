@@ -7,4 +7,9 @@
     src: url('assets/fonts/pokefont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    
+}
+
+.text-shadow{
+    text-shadow: 4px 4px 0 #cacaca;
 }
