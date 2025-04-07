@@ -13,3 +13,15 @@
 .text-shadow{
     text-shadow: 4px 4px 0 #cacaca;
 }
+
+.text-shadow-1{
+    text-shadow: 3px 3px 0 #a3a3a3;
+}
+
+.text-shadow-2{
+    text-shadow: 3px 3px 0 #242424;
+}
+
+.text-shadow-3{
+    text-shadow: 2px 2px 0 #343434;
+}
