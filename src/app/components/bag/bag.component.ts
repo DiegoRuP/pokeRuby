@@ -93,10 +93,6 @@ export class BagComponent implements OnInit {
     this.selectedItem = item;
   }
 
-  getItemQuantity(itemName: string): number {
-    return Math.floor(Math.random() * 10) + 1;
-  }
-
   getDescription(item: any): string {
     if (!item) return '';
     
