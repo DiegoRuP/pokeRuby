@@ -1,27 +1,65 @@
-# PokeRuby
+# Pokémon Ruby Style Menu
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+![Pokémon Ruby Style Menu](https://img.shields.io/badge/Pok%C3%A9mon-Ruby%20Style-red)
+![Angular](https://img.shields.io/badge/Angular-17.3-red)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-blue)
+![PokéAPI](https://img.shields.io/badge/Pok%C3%A9API-v2-red)
 
-## Development server
+A nostalgic recreation of the Pokémon Ruby/Sapphire game menu system built with modern web technologies. This project uses Angular 17.3, Tailwind CSS, and the PokéAPI to deliver an authentic Pokémon experience right in your browser.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ Features
 
-## Code scaffolding
+- **Authentic Ruby/Sapphire Menu Experience**: Recreates the nostalgic feel of the original GBA games
+- **Responsive Design**: Works on desktop and mobile devices
+- **Real Pokémon Data**: Powered by the PokéAPI for authentic Pokémon information
+- **Menu Options**:
+  - 📱 **Pokédex**: Browse and search for Pokémon
+  - 🐉 **Pokémon Team**: View and manage your team
+  - 🎒 **Bag**: Check your items
+  - 🗺️ **Map**: Explore the region
+  - ℹ️ **About**: Information about the project
+  - 🚪 **Exit**: Close the menu
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📸 Screenshots
 
-## Build
+![Main Menu](./screenshots/main-menu.png)
+![Pokédex View](./screenshots/pokedex.png)
+![Pokémon Team](./screenshots/pokemon-team.png)
+![Bag View](./screenshots/bag.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Technologies Used
 
-## Running unit tests
+- **Angular 17.3**: Utilizing the latest features and performance improvements
+- **Tailwind CSS**: For responsive and customized styling
+- **PokéAPI**: RESTful API for accurate Pokémon data
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Getting Started
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Node.js (v16+)
+- npm or yarn
 
-## Further help
+### Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/pokemon-ruby-menu.git
+   cd pokemon-ruby-menu
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+
+4. Open your browser and navigate to `http://localhost:4200`
+
+---
+
+⭐ This project is not affiliated with Nintendo or The Pokémon Company. Pokémon and Pokémon character names are trademarks of Nintendo.
