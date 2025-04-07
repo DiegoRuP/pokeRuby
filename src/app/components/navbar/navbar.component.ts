@@ -12,9 +12,8 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   menuItems = [
     { label: 'POKéDEX', link: '/pokedex' },
-    { label: 'POKéMON', link: '/pokemon-detail' },
+    { label: 'POKéMON', link: '/pokemon-team' },
     { label: 'BAG', link: '/bag' },
-    { label: 'GYM', link: '/gym' },
     { label: 'MAP', link: '/map' },
     { label: 'ABOUT', link: '/about' },
     { label: 'EXIT', link: '/' }

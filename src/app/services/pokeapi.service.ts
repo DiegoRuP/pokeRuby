@@ -21,4 +21,8 @@ export class PokeApiService {
   searchPokemon(term: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/pokemon/${term.toLowerCase()}`);
   }
+  getMoveByUrl(url: string) {
+    return this.http.get(url);
+  }
+  
 }

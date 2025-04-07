@@ -1,1 +1,79 @@
-<p>pokemon-detail works!</p>
+<div class="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center">
+    <div class="bg-blue-200 rounded-lg p-4 w-[95%] max-w-md border-8 border-black shadow-[0_0_0_4px_#222] relative">
+
+      <button (click)="closeModal()" class="absolute top-2 right-2 text-black text-xl font-bold bg-white border-2 border-black px-2 rounded shadow">
+        ✖
+      </button>
+  
+      <div *ngIf="pokemon" class="space-y-4 text-black">
+        <h2 class="text-2xl uppercase text-center border-b-4 border-black pb-2">
+          {{ pokemon.name }}
+        </h2>
+    
+        <div class="flex justify-center">
+          <img [src]="getSprite()" [alt]="pokemon.name" 
+               class="h-32 border-2 border-black bg-white p-1 rounded shadow-inner">
+        </div>
+   
+        <div class="flex justify-center gap-2">
+          <span 
+            *ngFor="let type of getTypes()" 
+            class="text-white py-1 px-3 rounded-full text-xl uppercase shadow-md border-2 border-black text-shadow-3"
+            [ngClass]="{
+              'bg-green-500': type === 'grass',
+              'bg-red-500': type === 'fire',
+              'bg-blue-500': type === 'water',
+              'bg-yellow-500': type === 'electric',
+              'bg-purple-500': type === 'poison',
+              'bg-gray-500': type === 'normal',
+              'bg-orange-500': type === 'fighting',
+              'bg-indigo-500': type === 'psychic',
+              'bg-gray-700': type === 'dark',
+              'bg-pink-300': type === 'fairy',
+              'bg-yellow-700': type === 'ground',
+              'bg-stone-500': type === 'rock',
+              'bg-yellow-300': type === 'bug',
+              'bg-gray-400': type === 'steel',
+              'bg-blue-300': type === 'ice',
+              'bg-indigo-700': type === 'dragon',
+              'bg-purple-700': type === 'ghost',
+              'bg-amber-700': type === 'flying'
+            }">
+            {{ type }}
+          </span>
+        </div>
+  
+        <!-- Descripción -->
+        <div class="border border-black bg-white rounded p-2">
+          <p class="text-l text-justify italic text-shadow-4">
+            {{ description }}
+          </p>
+        </div>
+  
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-2 text-xl text-shadow-4">
+          <div>
+            <strong>Height:</strong> {{ pokemon.height * 10 }} cm
+          </div>
+          <div>
+            <strong>Weight:</strong> {{ pokemon.weight / 10 }} kg
+          </div>
+          <div>
+            <strong>HP:</strong> {{ pokemon.stats[0].base_stat }}
+          </div>
+          <div>
+            <strong>Attack:</strong> {{ pokemon.stats[1].base_stat }}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-l text-shadow-4">Moves</h3>
+          <ul class="list-disc list-inside text-l max-h-32 overflow-y-auto pr-2 text-shadow-4">
+            <li *ngFor="let move of getMoves()" class="capitalize">
+              {{ formatMove(move) }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
