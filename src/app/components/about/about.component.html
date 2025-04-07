@@ -1,1 +1,40 @@
-<p>about works!</p>
+<div class="w-full h-full bg-blue-800 bg-gradient-to-r from-blue-900 to-blue-700 flex flex-col relative rounded-lg shadow-lg border-black border-4 overflow-hidden">
+
+    <div class="absolute inset-0 z-0">
+      <div class="flex flex-col gap-2">
+        <div *ngFor="let line of [1,2,3,4,5,6,7,8,9,10,11,12]" class="h-2" 
+             [class]="line % 2 === 0 ? 'bg-blue-800 opacity-50' : 'bg-blue-700 opacity-50'"></div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-full mx-4 mt-4 mb-6 py-1 px-4 text-center z-10 border-4 border-black">
+      <h1 class="text-6xl">ABOUT</h1>
+    </div>
+    
+ 
+    <div class="flex-1 flex flex-col items-center justify-center px-8 pb-8 z-10 min-h-0">
+      <div class="bg-white border-4 border-black rounded-lg p-8 max-w-2xl w-full shadow-inner text-shadow-4">
+
+        <div class="text-center mb-8">
+          <h2 class="text-3xl mb-4 ">Create by: Diego Ruan </h2>
+          <div class="text-xl space-y-4">
+            <p>"Pokémon Ruby is my favorite childhood game. I spent countless hours playing and completing it in many different ways.
+                My favorite Pokémon is <span class="text-green-600 font-bold">Sceptile</span>."</p>
+                
+          </div>
+        </div>
+
+        <div class="flex justify-center mb-8">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/254.png" 
+               alt="Sceptile"
+               class="h-24 object-contain">
+        </div>
+
+        <div class="text-center text-xl">
+            <p>This is a personal passion project.</p>
+            <p>Thank you for checking out my project!</p>
+        </div>
+        
+      </div>
+    </div>
+</div>
