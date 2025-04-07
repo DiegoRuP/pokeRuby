@@ -44,8 +44,8 @@ A nostalgic recreation of the Pokémon Ruby/Sapphire game menu system built with
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pokemon-ruby-menu.git
-   cd pokemon-ruby-menu
+   git clone https://github.com/DiegoRuP/pokeRuby.git
+   cd pokeRuby
    ```
 
 2. Install dependencies:
